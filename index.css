@@ -1,0 +1,763 @@
+/* ==============================================          Generaux       ============================================ */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: poppins, Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.limite{
+  padding: 15px 100px;
+  margin: auto;
+}
+.playfair{
+  font-family: "Playfair Display", serif;
+}
+
+.button{
+  display: inline-block;
+  height: 40px;
+  width: 150px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 2px solid #eeac39;
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;
+  }
+
+a{
+  text-decoration: none;
+}
+ul{
+  list-style-type: none;
+}
+.sub-section2 h1{
+  line-height: 1;
+  font-weight: 300;
+  letter-spacing: 1px;
+  width: 150px;
+}
+.h1{
+  font-weight: 700;
+  line-height: 56px;
+}
+h2{
+  font-weight: 200;
+  font-family: "Playfair Display", serif;
+}  
+p{
+  font-weight: 300;
+}
+/* =======================  Différentes tailles de police   =====================================  */
+.font10{
+  font-size: 10px;
+}
+.font12{
+  font-size: 12px;
+}
+.font14{  
+  font-size: 14px;
+}
+.font15{
+  font-size: 15px;
+}
+.font16{
+  font-size: 16px;
+}
+.font18{
+  font-size: 18px;
+}
+.font20{
+  font-size: 20px;
+}
+.font28{
+  font-size: 28px;
+}
+.font48{
+  font-size: 30px;
+}
+.italic{
+  font-style: italic;
+}
+.thin{
+  font-weight: 200;
+}
+.bold1{
+  font-weight: 500;
+}
+.line_h10{
+  line-height: 25px;
+}
+.underline{
+  text-decoration: underline;
+}
+/* ========================  Différentes tailles des containers   =====================================  */
+header{
+  height: 540px;
+  width:100%;
+}
+.max{
+  width: 100%;
+  height: 100%;
+}
+.max-demi{
+  width: 50%;
+  height: 50%;
+}
+.option{
+  width: 49%;
+}
+.input_contact{
+  width: 400px;
+}
+.input_cont_objet{
+  width:100%;
+}
+.contacter{
+  width:30%;
+}
+.contacter i{
+  font-size: 20px;
+  color: #e0ad55;
+}
+.contacter_inputs{
+  width: 65%;
+}
+.heightwidth100{
+  height: 100px;
+  width: 100px;
+}
+.temoin{
+  box-shadow: 3px 3px 3px black;
+  border-radius: 10px;
+}
+.text-area-msg{
+  height: 200px;
+  background-color: rgb(36, 34, 30);
+  padding: 20px;
+}
+/* =======================  Différentes proprietes des iconnes   =====================================  */
+img[src*="logo"]{
+  height: 40px;
+  border-radius: 50%;
+}
+.sub-main5 img{
+  width: 27vw;
+  height: 27vw;
+}
+.fa-circle-play{
+  font-size: 70px;
+  z-index: 2;
+}
+.fa-brand{
+  font-size: 20px;
+}
+.fa-quote-right, .fa-quote-left{
+  font-size: 30px;
+}
+.svg-social-media {
+  display: inline-block !important;
+  height: 35px;
+  width: 35px;
+  border-radius: 17.5px;
+  background-color: rgba(68, 67, 67, 0.288);
+}
+
+/* ===================================== Animation Play ============================================== */
+
+.legrand{
+  background-color: white;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  z-index: -1;
+}
+.lepetit{
+  background-color: #eeac39;
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  z-index: 0;
+  top: 10px;
+  left:10px;
+  animation: grandir-lepetit 2s infinite;
+}
+.lemilieu{
+  background-color:white;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  z-index: 1;
+  top: 15px;
+  left:15px;
+  animation: grandir-lemilieu 2s infinite;
+}
+
+@keyframes grandir-lepetit {
+  0%{
+    top: 10px;
+    left: 10px;
+    height: 80px;
+    width: 80px;
+  }
+  5%{
+    top: 8px;
+    left: 8px;
+    height: 84px;
+    width: 84px;
+  }
+  10%{
+    top: 6px;
+    left: 6px;
+    height: 88px;
+    width: 88px;
+  }
+  15%{
+    top: 4px;
+    left: 4px;
+    height: 92px;
+    width: 92px;
+  }
+  20%{
+    top: 2px;
+    left: 2px;
+    height: 96px;
+    width: 96px;
+  }
+  25%{
+    top: 0px;
+    left: 0px;
+    height: 100px;
+    width: 100px;
+   }
+  100%{
+    top: 0px;
+    left: 0px;
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@keyframes grandir-lemilieu {
+  0%{
+    top: 15px;
+    left: 15px;
+    height: 70px;
+    width: 70px;
+  }
+  5%{
+    top: 13px;
+    left: 13px;
+    height: 74px;
+    width: 74px;
+  }
+  10%{
+    top: 11px;
+    left: 11px;
+    height: 78px;
+    width: 78px;
+  }
+  15%{
+    top: 9px;
+    left: 9px;
+    height: 82px;
+    width: 82px;
+  }
+  20%{
+    top: 7px;
+    left: 7px;
+    height: 86px;
+    width: 86px;
+  }
+  25%{
+    top: 5px;
+    left: 5px;
+    height: 90px;
+    width: 90px;
+  }
+  30%{
+    top: 3px;
+    left: 3px;
+    height: 94px;
+    width: 94px;
+  }
+  35%{
+    top: 1px;
+    left: 1px;
+    height: 98px;
+    width: 98px;
+  }
+  37.5%{
+    top: 0px;
+    left: 0px;
+    height: 100px;
+    width: 100px;
+  }
+  100%{
+    top: 0px;
+    left: 0px;
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@keyframes haut {
+  0%{
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* ==================================  Différentes positions   =====================================  */
+.absolute{
+  position: absolute;
+}
+.relative{
+  position: relative;
+}
+.sticky{
+  position: sticky;
+}
+.topleft0{
+  top: 0;
+  left: 0;
+}
+.bottomleft0{
+  bottom: 0;
+  left: 0;
+}
+.toplef_moitie{
+  top: 15%;
+  left: 0;
+}
+.bot30{
+  bottom: 30px;
+}
+.top30{
+  top: 30px;
+}
+/* ===========================================       boites flex/grid           =============================== */
+.flex{
+  display: flex;
+}
+.none{
+  display: none;
+}
+.column{
+  flex-direction: column;
+}
+.gap2{
+  gap: 0px;
+}
+.gap10{
+  gap: 10px;
+}
+.gap15{
+  gap: 15px;
+}
+.gap20{
+  gap: 20px;
+}
+.gap30{
+  gap: 30px;
+}
+.wrap{
+  flex-wrap: wrap;
+}
+.grid{
+  display: grid;
+}
+.note_apropos>:last-child{
+  grid-template: 1fr 1fr/1fr 1fr;
+}
+.template-svg{
+  grid-template: 1fr/repeat(6, 1fr);
+}
+.menu{
+  grid-template: repeat(4,1fr)/repeat(2,1fr);
+}
+.sub-footer1{
+  grid-template: 1fr/1fr 0.5fr 1.3fr 1.5fr
+}
+.template-photos{
+  height: 900px;
+  width:1000px;
+  margin: auto;
+  grid-template: 1fr 0.2fr 0.4fr 0.2fr 1fr 0.3fr 0.4fr 0.1fr 0.5fr/1fr 1fr 1fr;
+  
+}
+.template-photos img{
+  height:100%;
+  width: 100%;
+  box-shadow: 1px 1px 4px rgb(139, 138, 133);
+  transition: all 0.5s ease-in-out;
+}
+.photo1{
+  grid-area: 1/1/4/2;
+}
+.photo2{
+  grid-area: 1/2/3/3;
+}
+.photo3{
+  grid-area: 1/3;
+}
+.photo4{
+  grid-area: 4/1/8/2;
+}
+.photo5{
+  grid-area: 3/2/7/3;
+}
+.photo6{
+  grid-area: 2/3/5/4;
+}
+.photo7{
+  grid-area: 7/2/10/3;
+}
+.photo8{
+  grid-area: 5/3;
+}
+.photo9{
+  grid-area: 6/3/9/4;
+}
+.main_center{
+  justify-content: center;
+}
+.cross_center{
+  align-items: center;
+}
+.main-space-between{
+  justify-content: space-between;
+}
+.cross-space-between{
+  align-items: space-between;
+}
+.main.space-evenly{
+  justify-content: space-evenly;
+}
+.cross-space-evenly{
+  align-items: space-evenly;
+}
+.justify{
+  text-align: justify;
+}
+.center{
+  text-align: center;
+}
+.cross_start{
+  align-items:start;
+}
+.cross_end{
+  align-items: end;
+}
+/* =================================================     Backgrounds              ================================ */
+.fondu{
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.bg-header{
+  background: url(Images/Welcome.jpg)  fixed;
+  background-size: cover;
+}
+.nav-bg{
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.sub-main1{
+  background: url(Images/assiettes_noircies.jpg) fixed center;
+  background-size: cover;
+}
+.background-apropos{
+  background-color: rgba(8, 15, 8, 0.8);
+}
+.blue-fondu{
+  background-color: #0a2a56c7;
+  width: 100%;
+  opacity: 0;
+  /* transition: all 1s ease-in-out; */
+  
+}
+.chef:hover .blue-fondu{
+  animation: haut 1s ease;
+}
+.sub-main2{
+  background-color: rgb(20, 19, 19);
+}
+.sub-main3{
+  background-color: black;
+}
+.sub-main4{
+  background-color: rgb(26, 24, 24); 
+}
+.sub-main5{
+  background-color: rgb(36, 34, 30);
+}
+.sub-main6 {
+  background-color: black;
+}
+footer{
+  background-color: rgb(19, 19, 19);
+}
+.sub-footer2{
+  background-color: #000;
+  box-shadow: 2px 2px 10px grey;
+}
+.temoin{
+  background-color: rgb(31, 30, 30);
+  height: 250px;
+  width: auto;
+}
+
+/* ========================================================    Z-index       ============================================= */
+[class^="bg"]{
+  z-index: -2;
+}
+
+.z-index0{
+  z-index: 0;
+}
+.z-index1{
+  z-index: 1;
+}
+
+/* ===========================================================      cursor       ============================================== */
+.pointer{
+  cursor: pointer;
+}
+
+/* ===================================================       paddings & margins      ========================================= */
+.pad20{
+  padding: 20px;
+}
+.pad30{
+  padding: 30px;
+}
+.pad40{
+  padding: 40px;
+}
+.ptop200{
+  padding-top: 150px;
+}
+.ptop70{
+  padding-top: 70px;
+}
+.ptop30{
+  padding-top:30px;
+}
+.ptop10{
+  padding-top: 10px;
+}
+.ptop6{
+  padding-top: 6px;
+}
+.pbot20{
+  padding-bottom: 20px;
+}
+.pbot50{
+  padding-bottom: 50px;
+}
+.ptopbot10{
+  padding: 10px 0;
+}
+.ptopbot20{
+  padding: 20px 0;
+}
+.pleft10{
+  padding-left: 10px;
+}
+.pright20{
+  padding-right: 20px;
+}
+.pleft24{
+  padding-left: 24px;
+}
+.pleft50{
+  padding-left: 50px;
+}
+.mleft200{
+  margin-left: 200px;
+}
+.mleft20{
+  margin-left: 20px;
+}
+.mleftright80{
+  margin-left: 80px;
+  margin-right: 80px;
+}
+.mtop20{
+  margin-top: 20px;
+}
+.mtop10{
+  margin-top: 10px;
+}
+.mright20{
+  margin-right: 20px;
+}
+.m_auto{
+  margin: auto;
+}
+/* ===================================================            colors              ============================================== */
+.jaune{
+  color:#e0ad55
+}
+
+.beige{
+  color:#ddd7cb
+}
+.skyblue{
+  color: rgb(4, 39, 85);
+}
+.gray{
+  color:gray
+}
+.black{
+  color:black;
+}
+
+/* ========================================================            hovers             ================================================ */
+
+.button:hover{
+  color: white !important;
+  border: 2px solid rgba(253, 253, 253, 0.8);
+  background-color: #eeac39;
+  font-weight: 700;
+  }
+details:first-of-type nav>*:hover {
+  width: 100%;
+  background-color:rgba(0, 0, 0, 0.9);
+  border-radius: 3px;
+}
+.note_apropos>:last-child img:hover{
+  transform: scale(1.1);
+}
+section[id="principal"], [onclick]:hover, .sub-section2 a:hover, summary[title]:hover{
+  color:#eeac39;
+  cursor: pointer;
+}
+.svg-social-media:hover{
+  transform: scale(1.1);
+  color: white;
+}
+.template-photos img:hover{
+  transform: scale(1.1);
+}
+.border-pic-special:hover{
+  border: 4px solid rgb(66, 65, 65);
+}
+.blue-fondu:hover{
+  opacity: 1;
+}
+
+/* =====================================================            borders            ================================================ */
+.border-bot{
+  border-bottom: 1px solid rgba(248, 247, 246, 0.6);
+}
+.border-bot-main{
+  border-bottom: 0.5px solid rgb(70, 70, 70);
+}
+.border-right{
+  border-right: 2px solid #eeac39;
+}
+.border-pic-menu{
+  height: 70px;
+  width: 70px;
+  border: 4px solid rgb(83, 82, 82);
+  border-radius: 50%;
+  object-fit: cover;
+}
+.border-pic-temoin{
+  height: 100px;
+  width: 100px;
+  border: 4px solid rgb(83, 82, 82);
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+.border-pic-special{
+  height: 200px;
+  width: 200px;
+  border: 2px solid black;
+  border-radius: 50%;
+  transition: border 0.3s ease-in-out;
+}
+.dashed-line{
+  display: inline-block;
+  width: 200px;
+  border-top: 0.3px dashed rgba(121, 120, 120, 0.623);
+}
+
+.sub-section2{
+  height: 75px;
+}
+details:first-of-type{
+  width: 150px;
+}
+details:first-of-type nav{
+  box-shadow: 3px -3px 3px rgb(247, 164, 55);
+  border-radius: 10px;
+  background-color: rgba(248, 247, 246, 0.5);
+  width: 150px;
+}
+
+.note_apropos>:last-child{
+  height:565px;
+}
+
+.note_apropos>:last-child div{
+  border: 2px rgba(0, 0, 0, 0) solid;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.note_apropos>:last-child img{
+  transition: all 0.5s ease-in-out;
+}
+.template-photos div{
+  overflow: hidden;
+}
+.sub-main1{
+  padding-bottom: 100px;
+}
+.title-line{
+  display: inline-block;
+  width: 100px;
+  border-top: 0.3px solid rgba(121, 120, 120, 0.623);
+}
+.menu{
+  transition: display 3s ease-in-out;
+}
+form{
+  height:40px;
+  width:fit-content;
+  border-radius: 20px;
+  background-color: rgb(199, 199, 196);
+}
+div>input{
+  height:45px;
+  width: 32.1%;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0.2px solid  #afadad9d;
+  padding-left: 10px;
+}
+
+.textarea{
+  background-color: black;
+  height: 120px;
+  border: 0.2px solid #afadad9d;
+  padding: 15px;
+}
+form input{
+  height:30px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  border-radius: 15px 0 0 15px;
+}
+form input:focus{
+  outline: none;
+}
